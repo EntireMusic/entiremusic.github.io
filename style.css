@@ -11,3 +11,9 @@ body {
     align-items: center;
     align-content: center;
 }
+
+#mainPhoto {
+    size: 20vh;
+    border: #eee 2px;
+    border-radius: 50%;
+}
