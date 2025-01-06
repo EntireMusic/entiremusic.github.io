@@ -25,6 +25,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 1px 1px 30px rgba(255, 243, 174, 0.5);
+    margin: 2vh auto;
 }
 
 #mainPhoto img {
@@ -37,12 +38,12 @@ body {
     border: 2px solid rgba(238, 238, 238, 0.5);
     border-radius: 15px;
     padding: 10px 30px;
-    margin: 5vh 0;
+    margin: 2vh auto;
 }
 
 h1 {
     text-align: center;
-    margin: 2vh 0vh;
+    margin: 2vh auto;
 }
 
 h3 {
