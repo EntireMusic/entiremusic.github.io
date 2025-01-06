@@ -64,22 +64,18 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw; /* Управляет расстоянием между элементами */
     max-width: 60vw;
     margin: 2vh auto;
     text-align: center;
 }
 
 footer a {
-    margin: auto 1vw;
     text-decoration: none;
     color: rgb(220, 200, 50);
-}
-
-@media (max-width: 768px) {
-    footer a {
-        margin: auto 0.5vw;
-        font-size: 2vw;
-    }
+    margin: auto 3px
 }
 
 footer a:hover {
