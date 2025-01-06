@@ -54,6 +54,7 @@ h1 {
 }
 
 .text-block p {
+    text-indent: 1em;
     margin: 1vh 0 0;
     padding: 0;
 }
