@@ -46,12 +46,12 @@ h1 {
     margin: 2vh auto;
 }
 
-h3 {
+.text-block h3 {
     margin: 0;
     padding: 0;
 }
 
-p {
-    margin: 2vh 0 0;
+.text-block p {
+    margin: 1vh 0 0;
     padding: 0;
 }
