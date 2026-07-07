@@ -18,7 +18,7 @@ duckButton.addEventListener('mouseenter', () => {
     // Таймер 200 миллисекунд
     quackTimeout = setTimeout(() => {
         playQuack();
-    }, 200); 
+    }, 100); 
 });
 
 // Уход мыши
