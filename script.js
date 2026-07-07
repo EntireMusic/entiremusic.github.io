@@ -1,14 +1,33 @@
 const quackSound = new Audio('quack.mp3');
+let quackTimeout;
 
-// Play Quack sound
+// Функция для воспроизведения звука
 function playQuack() {
-    // .catch() обязателен, чтобы отловить блокировку браузером
+    // Сбрасываем трек на начало, если он уже играет (чтобы крякало при каждом наведении)
+    quackSound.currentTime = 0; 
+    
     quackSound.play().catch(error => {
-        console.log("Blocked by browser:", error);
+        console.log("Blocked by brouser:", error);
     });
 }
 
-// Привязываем воспроизведение к клику на кнопку
-document.getElementById('duckBtn').addEventListener('click', () => {
+const duckButton = document.getElementById('duckBtn');
+
+// Наведение мыши
+duckButton.addEventListener('mouseenter', () => {
+    // Таймер 200 миллисекунд
+    quackTimeout = setTimeout(() => {
+        playQuack();
+    }, 200); 
+});
+
+// Уход мыши
+duckButton.addEventListener('mouseleave', () => {
+    // Если мышка ушла раньше, отменяем таймер
+    clearTimeout(quackTimeout);
+});
+
+// Клик
+duckButton.addEventListener('click', () => {
     playQuack();
 });
