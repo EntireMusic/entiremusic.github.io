@@ -10,5 +10,5 @@ function playQuack() {
 
 // Привязываем воспроизведение к клику на кнопку
 document.getElementById('duckBtn').addEventListener('click', () => {
-    playNotification();
+    playQuack();
 });
